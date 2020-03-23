@@ -6,7 +6,7 @@ namespace Networking_Project
 	{
 		static void Main()
 		{
-			Networking game_network = new Networking();
+			Networking network_setup = new Networking();
 		}
 
 
