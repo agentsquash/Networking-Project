@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Net;
+using System.Net.Sockets;
+using System.Diagnostics;
 
 namespace Networking_Project
 {
@@ -14,6 +17,9 @@ namespace Networking_Project
 			Console.WriteLine("2: Host a game");
 			Console.WriteLine("\n0: Quit the game\n");
 			GetConnectionType();
+			if (status)
+				SetupHost();
+			SetupClient();
 		}
 		private void GetConnectionType()
 		{
@@ -52,7 +58,12 @@ namespace Networking_Project
 
 		private void SetupHost()
 		{
+			Process.Start(@"C:\Users\Alex\source\repos\Networking Project\GameServer\bin\Debug\netcoreapp3.1\GameServer.exe");
+		}
 
+		private void SetupClient()
+		{
+			Console.WriteLine("Both projects running");
 		}
 	}
 }

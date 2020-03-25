@@ -6,4 +6,8 @@
     <RootNamespace>Networking_Project</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameServer\GameServer.csproj" />
+  </ItemGroup>
+
 </Project>
